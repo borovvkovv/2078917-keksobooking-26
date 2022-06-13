@@ -4,7 +4,7 @@ function getRandomInt(start, end) {
     typeof start !== 'number' || typeof end !== 'number' ||
     start < 0 || end < 0 ||
     start % 1 !== 0 || end % 1 !== 0 ||
-    start >= end) {
+    start > end) {
     /*console.log(`Параметр 1 (начало диапазона) - положительное число.
 Параметр 2 (конец диапазона)- положительныое число.
 Параметр 3 (число знаков после запятой) - целое положительное число.`);*/
@@ -45,4 +45,4 @@ function IsFitted(string, maxLength) {
   return string.length <= maxLength;
 }
 
-IsFitted('qwerty', 6);
+IsFitted('qwerty', 10);
